@@ -3,8 +3,21 @@ font-family: 'Archivo', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+select,
+textarea {
   font-family: "Poppins", sans-serif;
+}
+
+body {
   background: #e5e5e5;
 }
 
@@ -35,6 +48,7 @@ header h1 {
   font-size: 36px;
   line-height: 42px;
   color: #ffffff;
+  margin-bottom: 24px;
 }
 
 header p {
@@ -48,4 +62,63 @@ form {
   min-height: 300px;
   margin-top: 38px;
   border-radius: 8px;
+  padding: 64px;
+}
+
+form fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form fieldset legend {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+
+  width: 100%;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+
+.input-warpper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-warpper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+  margin-bottom: 8px;
+}
+
+.input-warpper label span {
+  margin-left: 12px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #74717a;
+}
+
+.input-warpper input,
+.input-warpper textarea {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+  color: #74717a;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.input-warpper textarea {
+  padding: 0;
+  height: 168px;
 }
